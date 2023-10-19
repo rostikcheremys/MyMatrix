@@ -113,7 +113,7 @@ namespace Program
 
         public MyMatrix(string input)
         {
-            string[] rows = input.Split(new [] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] rows = input.Split(new [] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
             
             int rowCount = rows.Length;
             int colCount = rows[0].Split(new [] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries).Length;
