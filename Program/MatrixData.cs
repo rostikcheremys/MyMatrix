@@ -61,6 +61,11 @@ namespace Program
             Width = array.GetLength(1);
         }
         
+        public MyMatrix(MyMatrix array)
+        {
+            _matrix = (double[,])array._matrix.Clone();
+        }
+        
         public MyMatrix(double[][] jaggedArray)
         {
             int rows = jaggedArray.Length;
